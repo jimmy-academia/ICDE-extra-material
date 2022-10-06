@@ -21,26 +21,26 @@ python build_demographic.py
 > save in `cache/model_weights/[dataset_modeltype].pth`
 
 * run all experiments sequentially
+> The experiments for Table III
 ```bash!
-# The experiments for Table III
 bash scripts/all_2p.sh -d ciao -a -g <device>
 bash scripts/all_2p.sh -d ciao -m -g <device>
 bash scripts/all_2p.sh -d epinions -a -g <device>
 bash scripts/all_2p.sh -d epinions -m -g <device>
-
-# The experiments for Fig. 2 
-## NOTE: should be conducted after finishing all_2p experiments for the first opponent poison.
+```
+> The experiments for Fig. 2 (NOTE: should be conducted after finishing all_2p experiments for the first opponent poison.)
+```
 bash scripts/all_num.sh -d ciao -g <device>
 bash scripts/all_num.sh -d ciao -m -g <device>
 bash scripts/all_num.sh -d epinions -g <device>
 bash scripts/all_num.sh -d epinions -m -g <device>
-
-# The experiments for Fig. 4
+```
+> The experiments for Fig. 4
+```
 bash scripts/all_opb.sh -d ciao -g <device>
 bash scripts/all_opb.sh -d ciao -m -g <device>
 bash scripts/all_opb.sh -d epinions -g <device>
 bash scripts/all_opb.sh -d epinions -m -g <device>
-
 ```
 
 * run individual experiment
